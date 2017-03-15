@@ -17,6 +17,7 @@ header {
   left: 0;
   right: 0;
   padding-bottom: 0;
+  flex-wrap: wrap;
 }
 
 header div img {
@@ -29,6 +30,7 @@ header ul {
   list-style: none;
   font: 13px helvetica, sans-serif;
   display: flex;
+  flex-wrap: wrap;
 }
 
 header ul li {
@@ -61,13 +63,16 @@ main {
 }
 
 main div {
-  border-bottom: 2px solid #bcbcbc;
   margin-left: 1em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.7em;
 }
 
 main div p {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #bcbcbc;
+  padding-bottom: 0.7em;
 }
 
 main div img {
@@ -75,12 +80,20 @@ main div img {
 }
 
 @media (max-width: 420px) {
-  main div {
-    height: 100vw;
-    width: 100vw;
-    padding-top: 0.7em;
+  header div img {
+    width: 42vw;
   }
+
+  main {
+    justify-content: space-between;
+  }
+
   main div img {
-    width: 100%;
+    width: 85%;
+  }
+
+  main div p {
+    flex-wrap: wrap;
+    margin-right: 0.7em;
   }
 }
