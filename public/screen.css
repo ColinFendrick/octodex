@@ -75,10 +75,69 @@ main div p {
   padding-bottom: 0.7em;
 }
 
+.number {
+  opacity: 0.5;
+  color: grey;
+  font-weight: bold;
+}
+
 main div img {
   width: 424px;
   border: thin solid #cacaca;
   border-radius: 3px;
+}
+
+footer {
+  border-top: thin #cacaca solid;
+  margin: 0.5em 1em;
+  padding: 0;
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  list-style: none;
+  font: 13px helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+footer ul li {
+  margin: 0 0.3em;
+  padding: 0.5em;
+}
+
+footer ul a:link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer ul a:visited {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer ul a:hover {
+  color: #226dbe;
+}
+
+.bottomLogo {
+  margin-left: 10em;
+}
+
+.copyright {
+  font-size: 0.75em;
+  color: grey;
+  font-weight: bold;
+  opacity: 0.9;
 }
 
 @media (max-width: 420px) {
@@ -101,5 +160,9 @@ main div img {
   main div p {
     flex-wrap: wrap;
     margin-right: 0.7em;
+  }
+
+  .bottomLogo {
+    width: 10%;
   }
 }
