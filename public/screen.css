@@ -58,7 +58,6 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 0;
   padding-top: 5em;
 }
 
@@ -66,6 +65,7 @@ main div {
   margin-left: 1em;
   margin-bottom: 0.5em;
   padding-bottom: 0.7em;
+  margin-top: 0.7em;
 }
 
 main div p {
@@ -77,6 +77,8 @@ main div p {
 
 main div img {
   width: 424px;
+  border: thin solid #cacaca;
+  border-radius: 3px;
 }
 
 @media (max-width: 420px) {
@@ -86,6 +88,10 @@ main div img {
 
   main {
     justify-content: space-between;
+  }
+
+  main div {
+    margin-top: 50px;
   }
 
   main div img {
